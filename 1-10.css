@@ -71,3 +71,29 @@ footer {
   background-color: #aaa;
 }
 
+/* タブレット縦置きサイズ（768px）以下の際に適用される設定 */
+@media screen and (max-width:768px) {
+  header {
+    width: 100%;
+  }
+
+    /* 縦に並べる */
+    main {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  /* 箱の幅90%、margin:下20px(last以外),左右指定なし（auto） */
+  .step-box{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px; 
+  }
+  
+  .step-box:last-child {
+    margin: auto;
+    margin-bottom: 0;
+  }
+}
